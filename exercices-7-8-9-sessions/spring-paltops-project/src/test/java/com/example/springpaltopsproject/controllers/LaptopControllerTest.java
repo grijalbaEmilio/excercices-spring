@@ -16,10 +16,10 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+//@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class LaptopControllerTest {
 
-    private TestRestTemplate testRestTemplate;
+    /*private TestRestTemplate testRestTemplate;
 
     @Autowired
     private RestTemplateBuilder restTemplateBuilder;
@@ -32,6 +32,17 @@ class LaptopControllerTest {
         restTemplateBuilder = restTemplateBuilder.rootUri("http://localhost:" + port);
         testRestTemplate = new TestRestTemplate(restTemplateBuilder);
     }
+    */
+
+    @Test
+    void envVar(){
+        System.getenv()
+                .forEach((x, y) ->
+                        System.out.println(x +" == "+y)
+                );
+    }
+
+    /*
 
     @Test
     void add() {
@@ -77,5 +88,7 @@ class LaptopControllerTest {
 
         assertEquals(HttpStatus.NOT_FOUND, response.getStatusCode());
     }
-    
+
+    */
+
 }
