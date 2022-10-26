@@ -32,7 +32,7 @@ for delete all laptops
 
 ## build project
 
-(open)[./target/spring-paltops-project-0.0.1-SNAPSHOT.jar] build project
+[open](./target/spring-paltops-project-0.0.1-SNAPSHOT.jar) build project
 
 ## security 
 
